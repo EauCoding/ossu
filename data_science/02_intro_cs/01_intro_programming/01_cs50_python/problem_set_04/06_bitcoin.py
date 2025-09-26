@@ -5,7 +5,8 @@ def main():
     try:
         if len(sys.argv) == 2:
             value = float(sys.argv[1])
-            response = requests.get("https://rest.coincap.io/v3/assets/bitcoin?apiKey=a6410160f881382c23c547e8452e64048bb400886485f1ee36c2eece1e8b790f")
+            api_key = "api_key"
+            response = requests.get(f"https://rest.coincap.io/v3/assets/bitcoin?apiKey={api_key}")
             resp_json = response.json()
             price = float(resp_json["data"]["priceUsd"])
             print(f"${price * value:,.4f}")
