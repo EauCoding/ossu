@@ -2,9 +2,9 @@
 --  Make use of AS to rename a column
 --  Involve at least one condition, using WHERE
 --  Sort by at least one column, using ORDER BY
-SELECT "english_title" AS 'Hiroshige Brightest'
-FROM "views"
-WHERE "artist" = 'Hiroshige'
-ORDER BY "brightness" DESC
+SELECT english_title AS 'Hiroshige Brightest'
+FROM views
+WHERE artist = 'Hiroshige'
+ORDER BY brightness DESC
 LIMIT 1
 ;
