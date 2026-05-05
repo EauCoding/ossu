@@ -1,13 +1,13 @@
 SELECT 
-    "first_name", 
-    "last_name", 
-    "debut"
-FROM "players"
+    first_name, 
+    last_name, 
+    debut
+FROM players
 WHERE 
-    "birth_city" = 'Pittsburgh' 
-    AND "birth_state" = 'PA'
+    birth_city = 'Pittsburgh' 
+    AND birth_state = 'PA'
 ORDER BY 
-    "debut" DESC, 
-    "first_name", 
-    "last_name"
+    debut DESC, 
+    first_name, 
+    last_name
 ;
