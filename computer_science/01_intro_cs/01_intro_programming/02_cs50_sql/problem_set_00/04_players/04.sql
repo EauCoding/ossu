@@ -1,9 +1,9 @@
 SELECT 
-    "first_name", 
-    "last_name"
-FROM "players"
-WHERE "birth_country" <> 'USA'
+    first_name, 
+    last_name
+FROM players
+WHERE birth_country <> 'USA'
 ORDER BY 
-    "first_name", 
-    "last_name"
+    first_name, 
+    last_name
 ;
